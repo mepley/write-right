@@ -1,0 +1,444 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <script>
+    // Don't force http when serving the website locally
+    if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' type='image/x-icon' href='public/images/favicon.ico' />
+
+  <title>Write Right</title>
+  <meta name="description" content="Write Right">
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="public/css/global.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+
+<body class='text-gray-700'>
+  <script src="js/scripts.js"></script>
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <nav class="w-full fixed top-0 bg-secondary shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button id='hamburger-button'
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed. -->
+            <!-- Heroicon name: menu Menu open: "hidden", Menu closed: "block" -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!-- Icon when menu is open. -->
+            <!-- Heroicon name: x Menu open: "block", Menu closed: "hidden" -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block lg:hidden h-8 w-auto" src="public/images/logo.JPG" alt="Workflow">
+            <img class="hidden lg:block h-8 w-auto" src="public/images/logo.JPG" alt="Workflow">
+          </div>
+
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <a href="#services"
+                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <a href="#testimonials"
+                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+              <a href="#pricing" class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+              <a href="#bio" class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Bio</a>
+              <a href="#contact"
+                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile menu, toggle classes based on menu state. Menu open: "block", Menu closed: "hidden" -->
+    <div id='mobile-nav-menu' class="hidden sm:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#landing" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Wr!te
+          Right</a>
+        <a href="#services"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#testimonials"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+        <a href="#pricing"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+        <a href="#bio"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Bio</a>
+        <a href="#contact"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id='landing' class='w-full h-torn-buffer'>
+    <img class='object-contain max-w-xl center-landing-image' src="public/images/logo.JPG" alt="Write Right Logo" />
+
+    <div class="center-linkedin-card">
+      <div class="flex items-center justify-center space-x-2">
+        <div class="relative" style="width: 70px; height: 70px;">
+          <a href="https://www.linkedin.com/in/alix-traver-00556918/">
+            <img class="rounded-full shadow-md" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
+          </a>
+          <img class="absolute bottom-0 right-0 h-4" style="transform: translate(15%, 15%)"
+            src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
+        </div>
+        <div class="flex">
+          <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2">
+            <div class="text-primary font-bold text-xl">Alix Traver</div>
+            <div>Principal</div>
+          </div>
+          <div class="flex flex-col items-start justify-center pl-2">
+            <a class="text-secondary font-bold text-xl" href="tel:5627566147">562.756.6147</a>
+            <a href="mailto:atraver@aol.com">atraver@aol.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='writing' class='w-full h-full relative' style='height: 650px'>
+    <div class="w-full torn relative"></div>
+    <div class="w-full h-full bg-opacity-50 absolute top-0">
+      <div class="title title font-bold text-white text-5xl w-full h-full flex flex-col items-center justify-center">
+        <div class="mr-32">How you write what you write makes a</div>
+        <div class="ml-32">distinct impression—good or bad.</div>
+      </div>
+    </div>
+
+    <img class='object-cover w-full h-full' src='public/images/writing.webp' style='height: 650px;'>
+  </section>
+
+
+  <div class="w-full torn-top relative top-0"></div>
+
+  <section class="pt-32 pb-12 lg:pb-24 w-full">
+    <div style='height: 200px'
+      class='text-center font-bold text-5xl text-secondary grid place-items-center w-1/2 mx-auto'>Wr!teRight will help
+      to make your impression a good one!</div>
+  </section>
+
+  <section id='services' class="pt-32 pb-12 lg:pb-24 w-full">
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>Services</div>
+
+    <div class='w-full flex justify-center'>
+      <div class="flex flex-col max-w-5xl lg:flex-row lg:space-x-4 text-base leading-2 text-gray-600">
+
+        <div class='flex-1 my-6 lg:my-0'>
+          <div class='text-3xl font-bold text-secondary flex space-x-4 items-center justify-center lg:-ml-5'>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg> -->
+            Proofreading and Editing
+          </div>
+          <ul class="list-disc">
+            <li>Read text especially focusing on punctuation, grammar, and spelling</li>
+            <li>Track suggested changes for client’s review if requested or correct without tracking</li>
+            <li>Add comments for client’s review</li>
+            <li>Identify and correct areas that need consistency</li>
+            <li>Note readability and clarity issues in comments</li>
+            <li>Fact check as needed</li>
+            <li>Provide draft file for client’s review</li>
+            <li>Send finalized version to client</li>
+          </ul>
+        </div>
+
+        <div class='flex-1 my-6 lg:my-0'>
+          <div class='text-3xl font-bold text-secondary flex space-x-4 items-center justify-center lg:-ml-5'>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg> -->
+            Letter Writing
+          </div>
+          <ul class="list-disc">
+            <li>Discuss objective and desired outcome</li>
+            <li>Collect details and appropriate documents</li>
+            <li>Identify possible addressees and contact information</li>
+            <li>Draft letter for client’s review</li>
+            <li>Send finalized letter to client</li>
+          </ul>
+
+        </div>
+
+        <div class='flex-1 my-6 lg:my-0'>
+          <div class='text-3xl font-bold text-secondary flex space-x-4 items-center justify-center lg:-ml-5'>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg> -->
+            Resume and Bio Development
+          </div>
+          <ul class="list-disc">
+            <li>Discuss objective, desired outcome, and expected use</li>
+            <li>Review present resume and/or biography</li>
+            <li>Collect additional details from client</li>
+            <li>Create a draft resume and/or bio for client’s review</li>
+            <li>Provide final version to client</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id='services' class="pt-32 pb-12 lg:pb-24 w-full">
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>Types of Written Communication<br />We Can Help With</div>
+
+    <div class='w-full flex justify-center lg:w-1/2 mx-auto font-semibold text-lg text-secondary'>
+      <div class="w-full flex flex-col items-center justify-center">
+        <div>Biography</div>
+        <div>Email</div>
+        <div>Essay</div>
+        <div>Letter</div>
+        <div>Manual</div>
+      </div>
+      <div class="w-full flex flex-col items-center justify-center">
+        <div>Manuscript</div>
+        <div>Marketing material</div>
+        <div>Novel</div>
+        <div>Press release</div>
+        <div>Report</div>
+      </div>
+      <div class="w-full flex flex-col items-center justify-center">
+        <div>Resume</div>
+        <div>Term paper</div>
+        <div>Thesis</div>
+        <div>Website</div>
+        <div>White paper</div>
+      </div>
+    </div>
+  </section>
+
+  <section id='testimonials' class='w-full pt-32 pb-12 lg:pb-24 flex flex-col justify-center items-center w-3/4'>
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>Testimonials</div>
+
+    <div class="flex justify-center items-center space-x-4">
+
+      <div class="testimonial-card p-8">
+        <q class="handwritten">Alix, you are really, really good at what you do!  You are making me look like a brilliant
+          writer.</q>
+        <div class="handwritten float-right pt-2 pl-2" style="font-size: 1.75rem;">-Douglas R. Pricer, Author, The Strength of a Giant--The Story of Max Steineke</div>
+      </div>
+
+      <div class="testimonial-card p-8">
+        <q class="handwritten" style="font-size: 1.5rem; line-height: 0.8rem;">We asked Alix to help us write a letter regarding a service complaint. She pulled
+          together all the facts, researched the company information to find the appropriate
+          contact, and wrote a clear and concise letter outlining the entire situation. We heard
+          back from the company almost immediately and were satisfied and pleased with their
+          reply and solution.</q>
+        <div class="handwritten float-right pt-2 pl-2" style="font-size: 1.5rem;">—Preston and Cindy Zeigler</div>
+      </div>
+      
+      <div class="testimonial-card p-8">
+        <q class="handwritten">Alix: Thank you for helping me create my professional resume and website bio.</q>
+        <div class="handwritten float-right pt-2 pl-2" style="font-size: 1.75rem;">—Scott M. Eide, Acupuncturist, Simple Health Wellness</div>
+      </div>
+ 
+    </div>
+  </section>
+
+  <section id='pricing' class='w-full pt-32 pb-12 lg:pb-24 flex flex-col lg:max-w-prose mx-auto'>
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>Pricing</div>
+    <div class="">Fees will depend on the length of the document, the services needed, and the expected turnaround time.</div>
+    <div class="text-left  pl-12">Specific fees are based on the following:</div>
+    <div class=" pl-24">
+      <ul class="list-disc">
+        <li>the number of words, e.g., a book manuscript or a thesis</li>
+        <li>or on the single project, e.g., a letter or resume</li>
+      </ul>
+    </div>
+    <div class="">The fee will be clearly identified once the scope of the project is determined.</div>    
+  </section>
+
+  <section id='bio' class='pt-32 pb-12 lg:pb-24'>
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>About Alix</div>
+
+    <div class='w-full flex justify-center'>
+      <div class='flex flex-col lg:flex-row items-center mt-4 lg:mt-0 lg:items-start w-full mx-3 lg:mx-0 lg:w-1/2'>
+
+        <!-- <img class="object-contain lg:-ml-16 -mt-6 lg:mt-12 rounded-md"
+          src="data:image/jpeg;base64,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"
+          alt="Megan Traver Photo" /> -->
+
+        <div class='mx-2 lg:mx-8 mt-6 lg:mt-12'>
+          <!-- <div class='font-bold text-secondary'>About Me</div> -->
+          <div class='mb-4'>Alix Epley Traver has been involved with writing and editing for her entire life. She was
+            born into a family of journalists and authors where correct grammar, punctuation, and spelling were not only
+            emphasized but often debated. Her first editing experience was in sixth grade as the editor of Petite Press,
+            a student government newsletter.</div>
+
+          <div class='mb-4'>Throughout her career in various organizations and positions, she has written letters for
+            executives, served as the editor of many office and district newsletters, oversaw the development of both
+            hardcopy and digital newsletters distributed to more than 5ooo readers, created e-blasts, took minutes for
+            meetings, developed training manuals, and taught managers to write effective performance appraisals and
+            termination reports. Wherever she worked, she became the go-to person for proofreading just about everything
+            and anything.</div>
+
+          <div class="mb-4">Outside her work, she also edited booster club newsletters, assisted people in the writing
+            letters of complaint or commendation, helped write bios and resumes, and proofread college papers, reports,
+            and business communications for not just friends and family but others who valued her expertise.</div>
+
+          <div class="mb-4">Alix has a BA in English from Long Beach State University and an MBA from University of
+            Phoenix.</div>
+
+          <!-- <div class='font-bold text-secondary'>Experience</div>
+          <div class='mb-4'>I have worked in education for the past 20 years. I've been a substitute teacher, math
+            teacher, math coach,
+            district coach, assistant principal, and currently serve as a middle school principal. I am an educational
+            consultant and an adjunct teacher at San Diego State University, where I teach aspiring administrators about
+            visionary leadership.</div>
+
+          <div class='font-bold text-secondary'>Awards</div>
+          <div class='mb-4 flex flex-col lg:flex-row'>
+            <div class='ml-2 lg:ml-6'>
+              <div class='font-bold mt-2 text-secondary leading-tigsnught'>Go Long Beach Award</div>
+              <div class='leading-snug'>Received the prestigious Go Long Beach Award in June 2019 from Long Beach Mayor,
+                Dr. Robert Garcia,
+                for outstanding achievment at Washington Middle School. The award, as described by Mayor Garcia, is "the
+                chance to honor some bright stars in Long Beach who are doing incredible things in our community."
+              </div>
+            </div>
+            <img class='rounded-md object-contain lg:-mr-12 mt-2 lg:-mt-6 pl-3 -mb-16 lg:-pb-3' style="height: 225px;"
+              src="https://state-of-the-school.s3-us-west-2.amazonaws.com/Go+Long+Beach+Award.jpeg"
+              alt="Go Long Beach Award">
+          </div>
+        </div> -->
+
+        </div>
+      </div>
+
+  </section>
+
+
+
+  <section id='contact' class='py-24 lg:py-32'>
+    <div class='text-center font-bold text-5xl pb-8 -mt-6 text-primary'>Contact Info</div>
+
+    <div class='px-2 lg:w-2/3 mx-auto flex flex-col lg:flex-row justify-between items-center rounded-lg'>
+      <div class='flex flex-col justify-center items-center lg:mx-16'>
+        <div class='text-xl font-bold my-2'><span>Keep in touch!</span><span></span></div>
+        <div class='text-gray-600 my-2 text-lg text-center'>Let's get in touch!</div>
+
+        <form class="flex flex-wrap items-stretch w-full mb-4 relative" style='max-width: 300px;'>
+          <input id='subscriber-email-address' type="text"
+            class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border h-10 border-grey-light rounded rounded-r-none px-3 relative"
+            placeholder="Your email address">
+          <div class="flex -mr-px">
+            <button id='subscribe-button'
+              class="btn flex items-center leading-normal bg-green-500 hover:bg-green-600 transition-all duration-200 rounded rounded-l-none px-3 whitespace-no-wrap text-white text-sm font-bold">Subscribe</button>
+          </div>
+          <div class="g-recaptcha mt-2" data-sitekey="6Lf6ACEaAAAAAJQ7XzpG74thcRYr4hmxMRU3vCgg"></div>
+        </form>
+      </div>
+
+      <!-- <img class='object-contain rounded-lg shadow-md lg:rounded-r-lg py-4 lg:py-0' style='height: 300px; width: 500px;'
+        src="public/images/logo.JPG" alt="Write Right Logo" /> -->
+
+        <div class="testimonial-card p-8 grid place-items-center" style="width: 390px; height:175px;">
+          <div class="flex items-center justify-center space-x-2">
+            <div class="relative" style="width: 70px; height: 70px;">
+              <a href="https://www.linkedin.com/in/alix-traver-00556918/">
+                <img class="rounded-full shadow-md" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
+              </a>
+              <img class="absolute bottom-0 right-0 h-4" style="transform: translate(15%, 15%)"
+                src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
+            </div>
+            <div class="flex">
+              <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2">
+                <div class="text-primary font-bold text-xl">Alix Traver</div>
+                <div>Principal</div>
+              </div>
+              <div class="flex flex-col items-start justify-center pl-2">
+                <a class="text-secondary font-bold text-xl" href="tel:5627566147">562.756.6147</a>
+                <a href="mailto:atraver@aol.com">atraver@aol.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- <div class='pt-16 lg:pt-24'>
+      <div class='text-gray-500 text-xl lg:text-xl mt-2 mx-2 lg:mx-0 text-center'>For inquires regarding Alix's
+        services<br />please contact her at <a href="mailto:MeganTraver@stateoftheschool.com"
+          class='text-blue-600 underline whitespace-no-wrap'>atraver@aol.com</a></div>
+    </div> -->
+  </section>
+
+  <footer class='bg-secondary text-white w-full flex justify-center py-1'>
+    <div>© 2022 Write Right</div>
+  </footer>
+</body>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  // set page state
+  window.isMobileNavOpen = false
+
+  const btn = document.getElementById('subscribe-button')
+  const input = document.getElementById('subscriber-email-address')
+
+  btn
+    .addEventListener('click', function (event) {
+      event.preventDefault()
+
+      btn.value = 'Sending...'
+
+      const serviceID = 'service_h33w4pn'
+      const templateID = 'template_ppiphzr'
+      const userID = 'user_9c54mkCDAawsmbWBIxMF5'
+
+      emailjs.send(serviceID, templateID, {
+        subscriber_email_address: input.value
+      }, userID)
+        .then(() => {
+          btn.value = 'Subscribe'
+          alert('Success! You are now subscribed to our email newsletter!\n\nYou should receive a confirmation email shortly.\n\nThank you!')
+        }, (err) => {
+          btn.value = 'Subscribe'
+          alert('Please complete the reCAPTCHA before submitting.')
+        })
+    })
+
+  const hamburgerBtn = document.getElementById('hamburger-button')
+
+  hamburgerBtn.addEventListener('click', e => {
+    e.preventDefault()
+    window.isMobileNavOpen = !window.isMobileNavOpen
+    const menu = document.getElementById('mobile-nav-menu')
+    menu.classList.remove('hidden', 'visible')
+    menu.classList.add(window.isMobileNavOpen ? 'visible' : 'hidden')
+  })
+</script>
+
+</html>

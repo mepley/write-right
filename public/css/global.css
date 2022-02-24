@@ -1,0 +1,116 @@
+.text-primary {
+  color: #74a434;
+}
+
+.text-secondary {
+  color: #007bb6;
+}
+
+.bg-primary {
+  background-color: #74a434;
+}
+
+.bg-secondary {
+  background-color: #007bb6;
+}
+
+.h-torn-buffer {
+  height: calc(100vh - 90px);
+}
+
+.center-landing-image {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-linkedin-card {
+  position: absolute;
+  bottom: 18vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.torn::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  top: 100%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+}
+
+.torn-top::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  bottom: 0%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+  transform: rotate(180deg);
+}
+
+.title {
+  text-shadow: 0 1px 0 black;
+}
+
+.testimonial-card {
+  position: relative;
+  width: 400px;
+  background: #fff;
+  border-radius: 2px;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+}
+
+.testimonial-card::before,
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.testimonial-card::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.testimonial-card:hover::before,
+.testimonial-card:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-card:hover::before {
+  left: 5px;
+}
+
+.testimonial-card:hover::after {
+  right: 5px;
+}
+
+.handwritten {
+  line-height: 1.1;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 2rem;
+  color: darkblue;
+}
+
+/*# sourceMappingURL=global.css.map */
