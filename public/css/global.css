@@ -79,22 +79,40 @@ html {
   }
 }
 
+.landing-image {
+  width: 90vw;
+}
+@media (min-width: 640px) {
+  .landing-image {
+    width: 100%;
+  }
+}
+
 .testimonial-card {
   position: relative;
-  width: 400px;
+  width: 90vw;
   border-radius: 2px;
   background: #fff;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
 }
-
-.paper-color-2 {
-  background: #fcfcfc;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+@media (min-width: 500px) {
+  .testimonial-card {
+    width: 400px;
+  }
 }
 
-.paper-color-3 {
-  background: #fdfdfd;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+@media (max-width: 640px) {
+  .paper-color-2 {
+    background: #fcfcfc;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .paper-color-3 {
+    background: #fdfdfd;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+  }
 }
 
 .testimonial-card::before,
@@ -155,9 +173,16 @@ html {
 }
 
 .handwritten {
-  line-height: 0.6rem;
+  line-height: 0.5rem;
+  font-size: 1.5rem;
   font-family: "Nanum Pen Script", cursive;
   color: #016270;
+}
+@media (min-width: 640px) {
+  .handwritten {
+    line-height: 0.625rem;
+    font-size: 1.575rem;
+  }
 }
 
 .handwritten-2 {
@@ -176,7 +201,7 @@ html {
 }
 
 .text-6xl {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
 }
 
 /*# sourceMappingURL=global.css.map */
