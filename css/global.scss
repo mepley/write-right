@@ -20,6 +20,9 @@ html{ scroll-behavior:smooth }
 
 .h-torn-buffer {
   height: calc( 100vh - 90px );
+  // @media (min-width: 640px) {
+  //   height: calc( 100vh - 40px );
+  // }
 }
 
 @mixin horizontal-center {
@@ -104,6 +107,7 @@ html{ scroll-behavior:smooth }
   width: 90vw;
   max-width: 360px;
   @media (min-width: 500px) {
+  max-width: 100%;
     width: 400px;
   }
   border-radius: 2px;
