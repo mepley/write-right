@@ -80,7 +80,7 @@ html {
 }
 
 .landing-image {
-  width: 90vw;
+  width: 325px;
 }
 @media (min-width: 640px) {
   .landing-image {
@@ -91,6 +91,7 @@ html {
 .testimonial-card {
   position: relative;
   width: 90vw;
+  max-width: 360px;
   border-radius: 2px;
   background: #fff;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
@@ -174,7 +175,7 @@ html {
 
 .handwritten {
   line-height: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "Nanum Pen Script", cursive;
   color: #016270;
 }

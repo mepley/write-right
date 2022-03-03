@@ -92,7 +92,7 @@ html{ scroll-behavior:smooth }
 }
 
 .landing-image {
-  width: 90vw;
+  width: 325px;
   @media (min-width: 640px) {
     width: 100%;
   }
@@ -102,6 +102,7 @@ html{ scroll-behavior:smooth }
 .testimonial-card {
   position: relative;
   width: 90vw;
+  max-width: 360px;
   @media (min-width: 500px) {
     width: 400px;
   }
@@ -182,7 +183,7 @@ html{ scroll-behavior:smooth }
 
 .handwritten {
   line-height: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   @media (min-width: 640px) {
     line-height: 0.625rem;
     font-size: 1.575rem;
