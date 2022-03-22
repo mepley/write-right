@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='shortcut icon' type='image/x-icon' href='public/images/favicon.ico' />
 
-  <title>Write Right</title>
+  <title>Wr!te Right | Proofreading, editing, fact-checking, and more</title>
   <meta name="description" content="Write Right">
 
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -26,315 +26,328 @@
     rel="stylesheet">
 </head>
 
-<body class='text-gray-700'>
-  <script src="js/scripts.js"></script>
-  <!-- This example requires Tailwind CSS v2.0+ -->
-  <nav class="w-full fixed top-0 bg-secondary shadow-md z-50">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button id='hamburger-button'
-            class="transition-all inline-flex items-center justify-center p-2 rounded-md text-white opacity-90 hover:bg-opacity-90 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-200"
-            aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <!-- Icon when menu is closed. -->
-            <!-- Heroicon name: menu Menu open: "hidden", Menu closed: "block" -->
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <!-- Icon when menu is open. -->
-            <!-- Heroicon name: x Menu open: "block", Menu closed: "hidden" -->
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+<body class='text-gray-700 relative'>
+  <div id='app-wrapper' class="max-w-page mx-auto relative bg-white shadow-lg">
 
-        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0 flex items-center">
-            <a href="#landing">
-              <img class="block lg:hidden h-8 w-auto" src="public/images/logo.JPG" alt="Write Right Logo" />
-              <img class="hidden lg:block h-8 w-auto" src="public/images/logo.JPG" alt="Write Right Logo" />
+    <script src="js/scripts.js"></script>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="w-full fixed top-0 bg-secondary shadow-md z-50 max-w-page">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button id='hamburger-button'
+              class="transition-all inline-flex items-center justify-center p-2 rounded-md text-white opacity-90 hover:bg-opacity-90 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-200"
+              aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed. -->
+              <!-- Heroicon name: menu Menu open: "hidden", Menu closed: "block" -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Icon when menu is open. -->
+              <!-- Heroicon name: x Menu open: "block", Menu closed: "hidden" -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="#landing">
+                <img class="block lg:hidden h-8 w-auto" src="public/images/logo.JPG" alt="Write Right Logo" />
+                <img class="hidden lg:block h-8 w-auto" src="public/images/logo.JPG" alt="Write Right Logo" />
+              </a>
+            </div>
+
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-4">
+                <a href="#services"
+                  class="text-white hover:opacity-80 transition-all duration-300 px-3 py-2 rounded-md text-md font-medium">Services</a>
+                <a href="#testimonials"
+                  class="text-white hover:opacity-80 transition-all duration-300 px-3 py-2 rounded-md text-md font-medium">Testimonials</a>
+                <a href="#pricing"
+                  class="text-white hover:opacity-80 transition-all duration-300 px-3 py-2 rounded-md text-md font-medium">Pricing</a>
+                <a href="#bio" class="text-white hover:opacity-80 transition-all duration-300 px-3 py-2 rounded-md text-md font-medium">Bio</a>
+                <a href="#contact"
+                  class="text-white hover:opacity-80 transition-all duration-300 px-3 py-2 rounded-md text-md font-medium">Contact</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id='mobile-nav-menu' class="hidden sm:hidden shadow-md">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#services"
+            class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Services</a>
+          <a href="#testimonials"
+            class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Testimonials</a>
+          <a href="#pricing"
+            class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Pricing</a>
+          <a href="#bio"
+            class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Bio</a>
+          <a href="#contact"
+            class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id='landing' class='w-full h-torn-buffer'>
+
+      <div class="h-full flex flex-col items-center justify-center space-y-1 pt-16 lg:pt-24">
+
+        <img class='landing-image object-contain lg:w-full lg:px-0' src="public/images/logo.JPG"
+          alt="Write Right Logo" />
+
+        <div class="flex items-center justify-center space-x-2 z-10">
+          <div class="relative hover:opacity-90 transition-all duration-300">
+            <a href="https://www.linkedin.com/in/alix-traver-00556918/">
+              <img class="rounded-full shadow-md" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
             </a>
+            <img class="absolute bottom-0 right-0 h-4 bg-white cursor-pointer" style="transform: translate(15%, 15%)" style="background-blend-mode: multiply;"
+              src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
+          </div>
+          <div class="relative">
+            <div class="flex w-full h-full items-center justify-center">
+              <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2 -space-y-1">
+                <div class="text-primary font-bold text-base lg:text-xl whitespace-nowrap">Alix Traver</div>
+                <div class="text-gray-400 lg:text-gray-500 text-sm font-semibold lg:text-base">Principal</div>
+              </div>
+              <div class="flex flex-col items-start justify-center pl-2 -space-y-1 md:font-semibold text-sm lg:text-base text-gray-500">
+                <a class="text-secondary font-bold text-base lg:text-xl whitespace-nowrap hover:opacity-80 transition-all duration-300"
+                  href="tel:5627566147">562.756.6147</a>
+                <a class='text-gray-400 lg:text-gray-500 hover:opacity-80 transition-all duration-300 text-sm font-semibold lg:text-base' href="mailto:atraver@aol.com">atraver@aol.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id='writing' class='w-full h-full relative slogan-height'>
+      <div class="w-full torn relative"></div>
+      <div class="w-full h-full absolute top-0">
+        <div
+          class="title font-bold text-white text-3xl lg:text-6xl w-full h-full flex flex-col items-center justify-center text-shadow-lg leading-none">
+          <div class="pr-8 lg:mr-32 whitespace-nowrap">How you write makes</div>
+          <div class="pl-8 lg:ml-32 whitespace-nowrap">a distinct impression.</div>
+        </div>
+      </div>
+
+      <img class='object-cover w-full h-full slogan-height' src='public/images/writing.webp' />
+    </section>
+
+
+    <div class="w-full torn-top relative top-0"></div>
+
+    <section class="pt-16 lg:pt-32 w-full max-w-prose lg:max-w-none mx-auto">
+      <div class='text-center font-bold text-3xl lg:text-5xl text-secondary px-2 lg:p-0 lg:w-1/2 mx-auto'><span
+          class="text-primary">Wr!te</span><span class="text-secondary">Right</span> <span class="text-primary">will
+          help
+          to make your impression a good one!</span></div>
+    </section>
+
+    <section id='services' class="w-full pt-24 lg:pt-32">
+      <div class='text-center font-bold text-4xl lg:text-5xl lg:pb-4 text-primary mb-4'>Services</div>
+
+      <div class='w-full flex justify-center'>
+        <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-12 lg:space-y-0 text-base leading-2 text-gray-600 md:max-w-md lg:max-w-5xl">
+          <div class='flex-1 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
+            <div class='text-2xl font-bold text-secondary whitespace-nowrap text-center'>
+              Letter Writing
+            </div>
+            <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
+              <li class="mt-2">Discuss objective and desired outcome</li>
+              <li class="mt-2">Collect details and appropriate documents</li>
+              <li class="mt-2">Identify possible addressees and contact information</li>
+              <li class="mt-2">Draft letter for client’s review</li>
+              <li class="mt-2">Send finalized letter to client</li>
+            </ul>
           </div>
 
-          <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-4">
-              <a href="#services"
-                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-md font-medium">Services</a>
-              <a href="#testimonials"
-                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-md font-medium">Testimonials</a>
-              <a href="#pricing"
-                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-md font-medium">Pricing</a>
-              <a href="#bio" class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-md font-medium">Bio</a>
-              <a href="#contact"
-                class="text-gray-100 hover:text-white px-3 py-2 rounded-md text-md font-medium">Contact</a>
+          <div class='flex-1 mb-6 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
+            <div class='text-2xl font-bold text-secondary whitespace-nowrap flex items-center justify-center'>
+              Proofreading & Editing
             </div>
+            <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
+              <li class="mt-2">Read text especially focusing on punctuation, grammar, and spelling</li>
+              <li class="mt-2">Track suggested changes for client’s review if requested or correct without tracking</li>
+              <li class="mt-2">Add comments for client’s review</li>
+              <li class="mt-2">Identify and correct areas that need consistency</li>
+              <li class="mt-2">Note readability and clarity issues in comments</li>
+              <li class="mt-2">Fact check as needed</li>
+              <li class="mt-2">Provide draft file for client’s review</li>
+              <li class="mt-2">Send finalized version to client</li>
+            </ul>
+          </div>
+
+          <div class='flex-1 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
+            <div class='text-2xl font-bold text-secondary whitespace-nowrap text-center'>
+              Resume & Bio Development
+            </div>
+            <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
+              <li class="mt-2">Discuss objective, desired outcome, and expected use</li>
+              <li class="mt-2">Review present resume and/or biography</li>
+              <li class="mt-2">Collect additional details from client</li>
+              <li class="mt-2">Create a draft resume and/or bio for client’s review</li>
+              <li class="mt-2">Provide final version to client</li>
+            </ul>
           </div>
 
         </div>
       </div>
-    </div>
 
-    <div id='mobile-nav-menu' class="hidden sm:hidden shadow-md">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="#services"
-          class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Services</a>
-        <a href="#testimonials"
-          class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Testimonials</a>
-        <a href="#pricing"
-          class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Pricing</a>
-        <a href="#bio"
-          class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Bio</a>
-        <a href="#contact"
-          class="text-white hover:opacity-80 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-color">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <section id='landing' class='w-full h-torn-buffer'>
-
-    <div class="h-full flex flex-col items-center justify-center space-y-1 pt-16 lg:pt-24">
-
-      <img class='landing-image object-contain lg:max-w-xl lg:w-full lg:px-0' src="public/images/logo.JPG" alt="Write Right Logo" />
-
-      <div class="flex items-center justify-center space-x-2 z-10">
-        <div class="relative">
-          <a href="https://www.linkedin.com/in/alix-traver-00556918/">
-            <img class="rounded-full shadow-md" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
-          </a>
-          <img class="absolute bottom-0 right-0 h-4" style="transform: translate(15%, 15%)"
-            src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
-        </div>
-        <div class="relative">
-          <div class="flex w-full h-full items-center justify-center">
-            <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2 -space-y-1">
-              <div class="text-primary font-bold text-base lg:text-xl whitespace-nowrap">Alix Traver</div>
-              <div>Principal</div>
-            </div>
-            <div class="flex flex-col items-start justify-center pl-2 -space-y-1">
-              <a class="text-secondary font-bold text-base lg:text-xl whitespace-nowrap" href="tel:5627566147">562.756.6147</a>
-              <a href="mailto:atraver@aol.com">atraver@aol.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id='writing' class='w-full h-full relative slogan-height'>
-    <div class="w-full torn relative"></div>
-    <div class="w-full h-full absolute top-0">
+      <div class='text-center font-bold text-4xl text-primary mt-12 lg:mt-16 mb-4'>We can help with...</div>
       <div
-        class="title font-bold text-white text-3xl lg:text-6xl w-full h-full flex flex-col items-center justify-center text-shadow-lg leading-none">
-        <div class="pr-8 lg:mr-32 whitespace-nowrap">How you write makes</div>
-        <div class="pl-8 lg:ml-32 whitespace-nowrap">a distinct impression.</div>
-      </div>
-    </div>
-
-    <img class='object-cover w-full h-full slogan-height' src='public/images/writing.webp' />
-  </section>
-
-
-  <div class="w-full torn-top relative top-0"></div>
-
-  <section class="pt-16 lg:pt-32 w-full">
-    <div class='text-center font-bold text-3xl lg:text-5xl text-secondary px-2 lg:p-0 lg:w-1/2 mx-auto'><span
-        class="text-primary">Wr!te</span><span class="text-secondary">Right</span> <span class="text-primary">will help
-        to make your impression a good one!</span></div>
-  </section>
-
-  <section id='services' class="w-full pt-24 lg:pt-32">
-    <div class='text-center font-bold text-4xl lg:text-5xl pb-4 text-primary'>Services</div>
-
-    <div class='w-full flex justify-center'>
-      <div class="flex flex-col max-w-5xl lg:flex-row lg:space-x-4 text-base leading-2 text-gray-600">
-
-        <div class='flex-1 mb-6 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
-          <div class='text-2xl font-bold text-secondary whitespace-nowrap flex items-center justify-center'>
-            Proofreading & Editing
+        class='w-full flex justify-center lg:max-w-lg mx-auto font-normal lg:font-semibold text-base text-gray-500 lg:text-gray-600 md:max-w-md'>
+        <div class="w-full flex items-center justify-between px-3 lg:px-0 lg:ml-2 leading-1">
+          <div class="lg:w-1/3 lg:ml-8">
+            <div class="whitespace-nowrap">Biographies</div>
+            <div class="whitespace-nowrap">Emails</div>
+            <div class="whitespace-nowrap">Essays</div>
+            <div class="whitespace-nowrap">Letters</div>
+            <div class="whitespace-nowrap">Manuals</div>
           </div>
-          <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
-            <li class="mt-2">Read text especially focusing on punctuation, grammar, and spelling</li>
-            <li class="mt-2">Track suggested changes for client’s review if requested or correct without tracking</li>
-            <li class="mt-2">Add comments for client’s review</li>
-            <li class="mt-2">Identify and correct areas that need consistency</li>
-            <li class="mt-2">Note readability and clarity issues in comments</li>
-            <li class="mt-2">Fact check as needed</li>
-            <li class="mt-2">Provide draft file for client’s review</li>
-            <li class="mt-2">Send finalized version to client</li>
-          </ul>
-        </div>
-
-        <div class='flex-1 my-6 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
-          <div class='text-2xl font-bold text-secondary whitespace-nowrap text-center'>
-            Letter Writing
+          <div class="mx-1 lg:w-1/3 lg:ml-6">
+            <div class="whitespace-nowrap">Manuscripts</div>
+            <div class="whitespace-nowrap">Novels</div>
+            <div class="whitespace-nowrap">Press releases</div>
+            <div class="whitespace-nowrap">Resumes</div>
+            <div class="whitespace-nowrap">Marketing material</div>
           </div>
-          <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
-            <li class="mt-2">Discuss objective and desired outcome</li>
-            <li class="mt-2">Collect details and appropriate documents</li>
-            <li class="mt-2">Identify possible addressees and contact information</li>
-            <li class="mt-2">Draft letter for client’s review</li>
-            <li class="mt-2">Send finalized letter to client</li>
-          </ul>
-        </div>
-
-        <div class='flex-1 my-6 lg:my-0 w-full px-3 lg:px-0 lg:w-1/3'>
-          <div class='text-2xl font-bold text-secondary whitespace-nowrap text-center'>
-            Resume & Bio Development
-          </div>
-          <ul class="text-gray-500 lg:text-gray-600 lg:pl-2 font-normal lg:font-semibold text-base leading-none">
-            <li class="mt-2">Discuss objective, desired outcome, and expected use</li>
-            <li class="mt-2">Review present resume and/or biography</li>
-            <li class="mt-2">Collect additional details from client</li>
-            <li class="mt-2">Create a draft resume and/or bio for client’s review</li>
-            <li class="mt-2">Provide final version to client</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class='text-center font-bold text-3xl text-primary mt-4 lg:mt-0'>We can help with...</div>
-    <div class='w-full flex justify-center lg:max-w-lg mx-auto font-normal lg:font-semibold text-base text-gray-500 lg:text-gray-600'>
-      <div class="w-full flex items-center justify-between px-3 lg:px-0 lg:ml-2 leading-1">
-        <div class="lg:w-1/3 lg:ml-8">
-          <div class="whitespace-nowrap">Biographies</div>
-          <div class="whitespace-nowrap">Emails</div>
-          <div class="whitespace-nowrap">Essays</div>
-          <div class="whitespace-nowrap">Letters</div>
-          <div class="whitespace-nowrap">Manuals</div>
-        </div>
-        <div class="mx-1 lg:w-1/3 lg:ml-6">
-          <div class="whitespace-nowrap">Manuscripts</div>
-          <div class="whitespace-nowrap">Novels</div>
-          <div class="whitespace-nowrap">Press releases</div>
-          <div class="whitespace-nowrap">Resumes</div>
-          <div class="whitespace-nowrap">Marketing material</div>
-        </div>
-        <div class="mx-1 lg:w-1/3 lg:ml-8">
-          <div class="whitespace-nowrap">Websites</div>
-          <div class="whitespace-nowrap">Reports</div>
-          <div class="whitespace-nowrap">Term papers</div>
-          <div class="whitespace-nowrap">Theses</div>
-          <div class="whitespace-nowrap">White papers</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id='testimonials'
-    class='w-full pt-24 lg:pt-32 flex flex-col justify-center items-center w-3/4 cursor-default select-none'>
-    <div class='text-center font-bold text-4xl lg:text-5xl pb-8 -mt-6 text-primary'>Testimonials</div>
-
-    <div class="flex flex-col lg:flex-row justify-center items-center -space-x-6">
-
-      <div class="grid place-items-center shadow-md testimonial-note-1">
-        <div class="testimonial-card paper-color-2 p-8 text-xl lg:text-2xl leading-snug font-semibold text-gray-600">
-          <q class="handwritten-2">Alix, you are really, really good at what you do! <br />You are making me look like a
-            brilliant writer.</q>
-          <div class="handwritten-2 float-right pt-2 pl-2 font-semibold text-gray-500 lg:text-gray-600 text-base lg:text-lg">—Douglas R. Pricer,
-            Author, The
-            Strength of a Giant--The Story of Max Steineke</div>
-        </div>
-      </div>
-
-      <div class="grid place-items-center shadow-md testimonial-note-2">
-
-        <div class="testimonial-card paper-color-3 py-8 px-4 lg:p-8">
-          <q class="handwritten">We asked Alix to help us write a letter
-            regarding a service complaint. She pulled
-            together all the facts, researched the company information to find the appropriate
-            contact, and wrote a clear and concise letter outlining the entire situation. We heard
-            back from the company almost immediately and were satisfied and pleased with their
-            reply and solution.</q>
-          <div class="handwritten float-right pt-2 pl-2">—Preston and Cindy Zeigler</div>
-        </div>
-      </div>
-
-      <div class="grid place-items-center z-10 shadow-md testimonial-note-3">
-        <div class="testimonial-card p-8 py-12 text-blue-900">
-          <q class="handwritten-3 text-lg lg:text-xl opacity-80">Alix: Thank you for helping me create my professional resume and
-            website bio.</q>
-          <div class="handwritten-3 float-right pt-2 pl-2 opacity-80">—Scott M. Eide, Acupuncturist, Simple
-            Health Wellness</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id='pricing'
-    class='w-full pt-24 lg:pt-32 px-3 lg:px-0 flex flex-col lg:max-w-prose mx-auto font-normal lg:font-semibold text-gray-500 lg:text-gray-600 leading-snug text-base lg:text-lg'>
-    <div class='text-center font-bold text-4xl lg:text-5xl pb-4 -mt-6 text-primary'>Pricing</div>
-    <div>Fees will depend on the length of the document, the services needed, and the expected turnaround time.
-    </div>
-    <div class="text-left pl-4 lg:pl-12 mt-2">Specific fees are based on the following:</div>
-    <div class="pl-12 lg:pl-24 mb-2">
-      <ul class="list-disc">
-        <li>the number of words, e.g., a book manuscript or a thesis</li>
-        <li>or on the single project, e.g., a letter or resume</li>
-      </ul>
-    </div>
-    <div>The fee will be clearly identified once the scope of the project is determined.</div>
-  </section>
-
-  <section id='bio' class='pt-24 lg:pt-32 px-3 lg:px-0'>
-    <div class='text-center font-bold text-4xl lg:text-5xl pb-4 -mt-6 text-primary'>About Alix</div>
-    <div class='max-w-prose mx-auto font-normal lg:font-semibold text-gray-500 lg:text-gray-600 leading-snug'>
-      <div class='mb-3'>Alix Epley Traver has been involved with writing and editing for her entire life. She was
-        born into a family of journalists and authors where correct grammar, punctuation, and spelling were not only
-        emphasized but often debated. Her first editing experience was in sixth grade as the editor of Petite Press,
-        a student government newsletter.</div>
-      <div class='mb-3'>Throughout her career in various organizations and positions, she has written letters for
-        executives, served as the editor of many office and district newsletters, oversaw the development of both
-        hardcopy and digital newsletters distributed to more than 5ooo readers, created e-blasts, took minutes for
-        meetings, developed training manuals, and taught managers to write effective performance appraisals and
-        termination reports. Wherever she worked, she became the go-to person for proofreading just about everything
-        and anything.</div>
-      <div class="mb-3">Outside her work, she also edited booster club newsletters, assisted people in the writing
-        letters of complaint or commendation, helped write bios and resumes, and proofread college papers, reports,
-        and business communications for not just friends and family but others who valued her expertise.</div>
-      <div class="mb-3">Alix has a BA in English from Long Beach State University and an MBA from University of
-        Phoenix.</div>
-    </div>
-  </section>
-
-
-  <section id='contact' class='py-24 lg:py-32'>
-    <div class='text-center font-bold text-4xl lg:text-5xl pb-8 -mt-6 text-primary'>Let's get in touch!</div>
-
-    <div class="testimonial-card shadow-md py-8 px-3 lg:p-8 grid place-items-center mx-auto cursor-pointer">
-      <div class="flex items-center justify-center space-x-2">
-        <div class="relative" style="width: 70px; height: 70px;">
-          <a href="https://www.linkedin.com/in/alix-traver-00556918/">
-            <img class="rounded-full shadow-md" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
-          </a>
-          <img class="absolute bottom-0 right-0 h-4" style="transform: translate(15%, 15%)"
-            src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
-        </div>
-        <div class="flex text-base lg:text-xl">
-          <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2">
-            <div class="text-primary font-bold whitespace-nowrap">Alix Traver</div>
-            <div>Principal</div>
-          </div>
-          <div class="flex flex-col items-start justify-center pl-2">
-            <a class="text-secondary font-bold" href="tel:5627566147">562.756.6147</a>
-            <a href="mailto:atraver@aol.com">atraver@aol.com</a>
+          <div class="mx-1 lg:w-1/3 lg:ml-8">
+            <div class="whitespace-nowrap">Websites</div>
+            <div class="whitespace-nowrap">Reports</div>
+            <div class="whitespace-nowrap">Term papers</div>
+            <div class="whitespace-nowrap">Theses</div>
+            <div class="whitespace-nowrap">White papers</div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
+    </section>
+
+    <section id='testimonials'
+      class='w-full pt-24 lg:pt-32 flex flex-col justify-center items-center w-3/4 cursor-default select-none'>
+      <div class='text-center font-bold text-4xl lg:text-5xl pb-8 lg:pb-2 -mt-6 text-primary'>Testimonials</div>
+
+      <div class="w-80 flex flex-col lg:flex-row justify-center items-center lg:-space-x-6 space-y-6 lg:space-y-1">
+
+        <div class="grid place-items-center shadow-md testimonial-note-1">
+          <div class="testimonial-card paper-color-2 px-2 py-6 lg:p-8 text-lg lg:text-2xl leading-snug font-semibold text-gray-600">
+            <q class="handwritten-2">Alix, you are really, really good at what you do! <br />You are making me look like
+              a brilliant writer.</q>
+            <div
+              class="handwritten-2 float-right pt-2 pl-2 font-semibold text-gray-500 lg:text-gray-600 text-base lg:text-lg">
+              —Douglas R. Pricer,
+              Author, The
+              Strength of a Giant--The Story of Max Steineke</div>
+          </div>
+        </div>
+
+        <div class="grid place-items-center shadow-md testimonial-note-2">
+
+          <div class="testimonial-card paper-color-3 py-8 px-4 lg:p-8">
+            <q class="handwritten">We asked Alix to help us write a letter
+              regarding a service complaint. She pulled
+              together all the facts, researched the company information to find the appropriate
+              contact, and wrote a clear and concise letter outlining the entire situation. We heard
+              back from the company almost immediately and were satisfied and pleased with their
+              reply and solution.</q>
+            <div class="handwritten float-right pt-2 pl-2">—Preston and Cindy Zeigler</div>
+          </div>
+        </div>
+
+        <div class="grid place-items-center z-10 shadow-md testimonial-note-3">
+          <div class="testimonial-card p-8 py-12 text-blue-900">
+            <q class="handwritten-3 text-lg lg:text-xl opacity-80">Alix: Thank you for helping me create my professional
+              resume and
+              website bio.</q>
+            <div class="handwritten-3 float-right pt-2 pl-2 opacity-80">—Scott M. Eide, Acupuncturist, Simple
+              Health Wellness</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id='pricing'
+      class='w-full pt-24 lg:pt-32 px-3 lg:px-0 flex flex-col max-w-prose mx-auto font-normal lg:font-semibold text-gray-500 lg:text-gray-600 leading-snug text-base lg:text-base'>
+      <div class='text-center font-bold text-4xl lg:text-5xl pb-4 -mt-6 text-primary'>Pricing</div>
+      <div>Fees will depend on the length of the document, the services needed, and the expected turnaround time.
+      </div>
+      <div class="text-left pl-4 lg:pl-12 mt-2">Specific fees are based on the following:</div>
+      <div class="pl-12 lg:pl-24 mb-2">
+        <ul class="list-disc">
+          <li>the number of words, e.g., a book manuscript or a thesis</li>
+          <li>or on the single project, e.g., a letter or resume</li>
+        </ul>
+      </div>
+      <div>The fee will be clearly identified once the scope of the project is determined.</div>
+    </section>
+
+    <section id='bio' class='pt-24 lg:pt-32 px-3 lg:px-0'>
+      <div class='text-center font-bold text-4xl lg:text-5xl pb-4 -mt-6 text-primary'>About Alix</div>
+      <div class='max-w-prose mx-auto font-normal lg:font-semibold text-gray-500 lg:text-gray-600 leading-snug'>
+        <div class='mb-3'>Alix Epley Traver has been involved with writing and editing for her entire life. She was
+          born into a family of journalists and authors where correct grammar, punctuation, and spelling were not only
+          emphasized but often debated. Her first editing experience was in sixth grade as the editor of Petite Press,
+          a student government newsletter.</div>
+        <div class='mb-3'>Throughout her career in various organizations and positions, she has written letters for
+          executives, served as the editor of many office and district newsletters, oversaw the development of both
+          hardcopy and digital newsletters distributed to more than 5ooo readers, created e-blasts, took minutes for
+          meetings, developed training manuals, and taught managers to write effective performance appraisals and
+          termination reports. Wherever she worked, she became the go-to person for proofreading just about everything
+          and anything.</div>
+        <div class="mb-3">Outside her work, she also edited booster club newsletters, assisted people in the writing
+          letters of complaint or commendation, helped write bios and resumes, and proofread college papers, reports,
+          and business communications for not just friends and family but others who valued her expertise.</div>
+        <div class="mb-3">Alix has a BA in English from Long Beach State University and an MBA from University of
+          Phoenix.</div>
+      </div>
+    </section>
+
+
+    <section id='contact' class='py-24 lg:py-32'>
+      <div class='text-center font-bold text-4xl lg:text-5xl pb-8 -mt-6 text-primary'>Let's get in touch!</div>
+
+      <div class="testimonial-card shadow-md py-10 px-3 md:px-4 lg:px-8 lg:py-10 grid place-items-center mx-auto cursor-pointer">
+        <div class="flex items-center justify-center space-x-2 z-10">
+          <div class="relative hover:opacity-90 transition-all duration-300">
+            <a href="https://www.linkedin.com/in/alix-traver-00556918/">
+              <img class="rounded-full shadow-md bg-white" src="public/images/linkedin.jfif" alt="Alix Traver's LinkedIn">
+            </a>
+            <img class="absolute bottom-0 right-0 h-4 bg-white" style="transform: translate(15%, 15%)" style="background-blend-mode: multiply;"
+              src="public/images/LI-In-Bug.png" alt="Alix Traver's LinkedIn">
+          </div>
+          <div class="relative">
+            <div class="flex w-full h-full items-center justify-center">
+              <div class="flex flex-col items-end justify-center border-r-2 border-gray-300 pr-2 -space-y-1">
+                <div class="text-primary font-bold text-base lg:text-xl whitespace-nowrap">Alix Traver</div>
+                <div class="text-gray-400 lg:text-gray-500 font-semibold text-sm font-semibold lg:text-base">Principal</div>
+              </div>
+              <div class="flex flex-col items-start justify-center pl-2 -space-y-1 font-semibold text-gray-500">
+                <a class="text-secondary font-bold text-base lg:text-xl whitespace-nowrap hover:opacity-80 transition-all duration-300"
+                  href="tel:5627566147">562.756.6147</a>
+                <a class="text-gray-400 lg:text-gray-500 hover:opacity-80 transition-all duration-300 text-sm font-semibold lg:text-base" href="mailto:atraver@aol.com">atraver@aol.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </section>
 
-  <footer class='bg-secondary text-white w-full flex justify-center py-1'>
+  <footer class='relative bg-secondary text-white w-full flex justify-center py-1 shadow-md font-semibold text-sm'>
     <div id='copyright-date-footer'>© 2022 Write Right</div>
   </footer>
+
+  </div>
 </body>
 
 <script>
@@ -352,7 +365,7 @@
   })
 
   const copyrightDateFooter = document.getElementById('copyright-date-footer')
-  copyrightDateFooter.innerText =  `© ${new Date().getFullYear()} Write Right`
+  copyrightDateFooter.innerText = `© ${new Date().getFullYear()} Write Right`
 </script>
 
 </html>

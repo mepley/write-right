@@ -2,7 +2,13 @@ $primary-color: #74a434;
 $secondary-color: #007bb6;
 $ink-navy-blue: #016270;
 
-html{ scroll-behavior:smooth }
+html{
+  scroll-behavior:smooth
+}
+
+body {
+  background-image: linear-gradient(to right, $secondary-color 33.334%, darken($secondary-color, 45%) 33.333%, $secondary-color 33.333%);
+}
 
 .text-primary {
   color: $primary-color;
@@ -97,7 +103,12 @@ html{ scroll-behavior:smooth }
 .landing-image {
   width: 325px;
   @media (min-width: 640px) {
-    width: 100%;
+    min-width: 575px;
+    max-width: 575px;
+  }
+  @media (min-width: 1920px) {
+    min-width: 775px;
+    max-width: 775px;
   }
 }
 
@@ -210,4 +221,10 @@ html{ scroll-behavior:smooth }
 }
 .text-6xl {
   font-size: 3.25rem;
+}
+
+.max-w-page {
+  @media (min-width: 1920px) {
+    max-width: 1536px;
+  }
 }
