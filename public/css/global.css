@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #007bb6 33.334%, black 33.333%, #007bb6 33.333%);
+}
+
+.text-primary {
+  color: #74a434;
+}
+
+.text-secondary {
+  color: #007bb6;
+}
+
+.bg-primary {
+  background-color: #74a434;
+}
+
+.bg-secondary {
+  background-color: #007bb6;
+}
+
+.h-torn-buffer {
+  height: calc(100vh - 90px);
+}
+@media (max-width: 640px) {
+  .h-torn-buffer {
+    height: calc(100vh - 180px);
+  }
+}
+
+.center-landing-image {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-linkedin-card {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.torn::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  top: 100%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+}
+
+.torn-top::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  bottom: 0%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+  transform: rotate(180deg);
+}
+
+.title {
+  text-shadow: 0px 0px 35px black;
+  letter-spacing: -0.05rem;
+  font-style: italic;
+}
+
+.slogan-height {
+  height: 450px;
+}
+@media (min-width: 640px) {
+  .slogan-height {
+    height: 450px;
+  }
+}
+@media (min-width: 1024px) {
+  .slogan-height {
+    height: 625px;
+  }
+}
+
+.landing-image {
+  width: 325px;
+}
+@media (min-width: 640px) {
+  .landing-image {
+    min-width: 575px;
+    max-width: 575px;
+  }
+}
+@media (min-width: 1920px) {
+  .landing-image {
+    min-width: 775px;
+    max-width: 775px;
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  width: 90vw;
+  max-width: 360px;
+  border-radius: 2px;
+  background: #fff;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+}
+@media (min-width: 500px) {
+  .testimonial-card {
+    max-width: 100%;
+    width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .paper-color-2 {
+    background: #fcfcfc;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .paper-color-3 {
+    background: #fdfdfd;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+  }
+}
+
+.testimonial-card::before,
+.testimonial-card::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-note-1 {
+  transform: rotate(1.75deg);
+}
+@media (min-width: 640px) {
+  .testimonial-note-1 {
+    transform: rotate(-3deg);
+  }
+}
+
+.testimonial-note-2 {
+  transform: rotate(-1.75deg);
+}
+@media (min-width: 640px) {
+  .testimonial-note-2 {
+    transform: rotate(0deg);
+  }
+}
+
+.testimonial-note-3 {
+  transform: rotate(1.75deg);
+}
+@media (min-width: 640px) {
+  .testimonial-note-3 {
+    transform: rotate(3deg);
+  }
+}
+
+.testimonial-card::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.testimonial-card::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.testimonial-card:hover::before {
+  left: 5px;
+}
+
+.testimonial-card:hover::after {
+  right: 5px;
+}
+
+.handwritten {
+  line-height: 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Nanum Pen Script", cursive;
+  color: #016270;
+}
+@media (min-width: 640px) {
+  .handwritten {
+    line-height: 0.625rem;
+    font-size: 1.575rem;
+  }
+}
+
+.handwritten-2 {
+  line-height: 1.1;
+  font-family: "Architects Daughter", cursive;
+}
+
+.handwritten-3 {
+  line-height: 1.1;
+  font-family: "Permanent Marker", cursive;
+  color: #001b55;
+}
+
+.text-5xl {
+  font-size: 2.625rem;
+}
+
+.text-6xl {
+  font-size: 3.25rem;
+}
+
+@media (min-width: 1920px) {
+  .max-w-page {
+    max-width: 1536px;
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,232 @@
+$primary-color: #74a434;
+$secondary-color: #007bb6;
+$ink-navy-blue: #016270;
+
+html{
+  scroll-behavior:smooth
+}
+
+body {
+  background-image: linear-gradient(to right, $secondary-color 33.334%, darken($secondary-color, 45%) 33.333%, $secondary-color 33.333%);
+}
+
+.text-primary {
+  color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+.bg-secondary {
+    background-color: $secondary-color;
+}
+
+.h-torn-buffer {
+  height: calc( 100vh - 90px );
+  @media (max-width: 640px) {
+    height: calc( 100vh - 180px );
+  }
+}
+
+@mixin horizontal-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-landing-image {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-linkedin-card {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.torn::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  top: 100%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+}
+
+.torn-top::after {
+  content: "";
+  background: white;
+  padding: 40px;
+  position: absolute;
+  bottom: 0%;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background-size: 100%;
+  transform: rotate(180deg);
+}
+
+.title {
+  text-shadow: 0px 0px 35px black;
+  letter-spacing: -0.05rem;
+  font-style: italic;
+}
+
+.slogan-height {
+  height: 450px;
+  @media (min-width: 640px) {
+    height: 450px;
+  }
+  @media (min-width: 1024px) {
+    height: 625px;
+  }
+}
+
+.landing-image {
+  width: 325px;
+  @media (min-width: 640px) {
+    min-width: 575px;
+    max-width: 575px;
+  }
+  @media (min-width: 1920px) {
+    min-width: 775px;
+    max-width: 775px;
+  }
+}
+
+// TESTIMONIAL STYLES
+.testimonial-card {
+  position: relative;
+  width: 90vw;
+  max-width: 360px;
+  @media (min-width: 500px) {
+  max-width: 100%;
+    width: 400px;
+  }
+  border-radius: 2px;
+  background: #fff;
+  background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
+}
+
+.paper-color-2 {
+  @media (max-width: 640px) {
+    background: rgb(252, 252, 252);
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
+  } 
+}
+.paper-color-3 {
+  @media (max-width: 640px) {
+    background: rgb(253, 253, 253);
+    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
+  } 
+}
+
+.testimonial-card::before,
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  //box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.testimonial-note-1 {
+  transform: rotate(1.75deg);
+  @media (min-width: 640px) {
+    transform: rotate(-3deg);
+  }
+}
+.testimonial-note-2 {
+  transform: rotate(-1.75deg);
+  @media (min-width: 640px) {
+    transform: rotate(0deg);
+  }
+}
+.testimonial-note-3 {
+  transform: rotate(1.75deg);
+  @media (min-width: 640px) {
+    transform: rotate(3deg);
+  }
+}
+
+.testimonial-card::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.testimonial-card::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+// .testimonial-card:hover::before,
+// .testimonial-card:hover::after {
+//   box-shadow: 0 2px 14px rgba(0,0,0,.4);
+// }
+
+.testimonial-card:hover::before {
+  left: 5px;
+} 
+
+.testimonial-card:hover::after {
+  right: 5px;
+}
+
+// FONT STYLES
+
+.handwritten {
+  line-height: 0.5rem;
+  font-size: 1.6rem;
+  @media (min-width: 640px) {
+    line-height: 0.625rem;
+    font-size: 1.575rem;
+  }
+  font-family: 'Nanum Pen Script', cursive;
+  color: $ink-navy-blue;
+}
+.handwritten-2 {
+  line-height: 1.1;
+  font-family: 'Architects Daughter', cursive;
+} 
+.handwritten-3 {
+  line-height: 1.1;
+  font-family: 'Permanent Marker', cursive;
+  color: #001b55;
+}
+
+.text-5xl {
+  font-size: 2.625rem;
+}
+.text-6xl {
+  font-size: 3.25rem;
+}
+
+.max-w-page {
+  @media (min-width: 1920px) {
+    max-width: 1536px;
+  }
+}
