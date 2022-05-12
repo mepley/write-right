@@ -4,6 +4,7 @@ html {
 
 body {
   background-image: linear-gradient(to right, #007bb6 33.334%, black 33.333%, #007bb6 33.333%);
+  overflow-x: hidden;
 }
 
 .text-primary {
@@ -23,7 +24,7 @@ body {
 }
 
 .h-torn-buffer {
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
 @media (max-width: 640px) {
   .h-torn-buffer {
@@ -214,14 +215,6 @@ body {
   line-height: 1.1;
   font-family: "Permanent Marker", cursive;
   color: #001b55;
-}
-
-.text-5xl {
-  font-size: 2.625rem;
-}
-
-.text-6xl {
-  font-size: 3.25rem;
 }
 
 @media (min-width: 1920px) {

@@ -2,12 +2,54 @@ $primary-color: #74a434;
 $secondary-color: #007bb6;
 $ink-navy-blue: #016270;
 
-html{
-  scroll-behavior:smooth
+$text-base: 1rem;
+$text-lg: 1.25rem;
+$text-xl: 1.5rem;
+$text-2xl: 3rem;
+$text-3xl: 3rem;
+$text-4xl: 3.5rem;
+$text-5xl: 8rem;
+$text-6xl: 5.25rem;
+
+@mixin textSizes {
+  .text-base {
+    font-size: $text-base;
+  }
+  .text-lg {
+    font-size: $text-lg;
+  }
+  .text-xl {
+    font-size: $text-xl;
+  }
+  .text-2xl {
+    font-size: $text-2xl;
+  }
+  .text-3xl {
+    font-size: $text-3xl;
+  }
+  .text-4xl {
+    font-size: $text-4xl;
+  }
+  .text-5xl {
+    font-size: $text-5xl;
+  }
+  .text-6xl {
+    font-size: $text-6xl;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-image: linear-gradient(to right, $secondary-color 33.334%, darken($secondary-color, 45%) 33.333%, $secondary-color 33.333%);
+  background-image: linear-gradient(
+    to right,
+    $secondary-color 33.334%,
+    darken($secondary-color, 45%) 33.333%,
+    $secondary-color 33.333%
+  );
+  overflow-x: hidden;
 }
 
 .text-primary {
@@ -18,16 +60,16 @@ body {
 }
 
 .bg-primary {
-    background-color: $primary-color;
+  background-color: $primary-color;
 }
 .bg-secondary {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
 }
 
 .h-torn-buffer {
-  height: calc( 100vh - 90px );
+  height: calc(100vh);
   @media (max-width: 640px) {
-    height: calc( 100vh - 180px );
+    height: calc(100vh - 180px);
   }
 }
 
@@ -68,7 +110,8 @@ body {
   height: 30px;
   width: 100%;
   left: 0;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg)
+    bottom;
   background-size: 100%;
 }
 
@@ -81,7 +124,8 @@ body {
   height: 30px;
   width: 100%;
   left: 0;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg)
+    bottom;
   background-size: 100%;
   transform: rotate(180deg);
 }
@@ -120,38 +164,47 @@ body {
   width: 90vw;
   max-width: 360px;
   @media (min-width: 500px) {
-  max-width: 100%;
+    max-width: 100%;
     width: 400px;
   }
   border-radius: 2px;
   background: #fff;
-  background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 0%, 0.035),
+    hsla(0, 0%, 100%, 0.065) 100%
+  );
 }
 
 .paper-color-2 {
   @media (max-width: 640px) {
     background: rgb(252, 252, 252);
-    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
-  } 
+    background-image: -webkit-linear-gradient(
+      hsla(0, 0%, 0%, 0.035),
+      hsla(0, 0%, 100%, 0.065) 100%
+    );
+  }
 }
 .paper-color-3 {
   @media (max-width: 640px) {
     background: rgb(253, 253, 253);
-    background-image: -webkit-linear-gradient(hsla(0,0%,0%,.035), hsla(0,0%,100%,.065) 100%);
-  } 
+    background-image: -webkit-linear-gradient(
+      hsla(0, 0%, 0%, 0.035),
+      hsla(0, 0%, 100%, 0.065) 100%
+    );
+  }
 }
 
 .testimonial-card::before,
 .testimonial-card::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   width: 40%;
   height: 10px;
   //box-shadow: 0 5px 14px rgba(0,0,0,.7);
-  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
   z-index: -1;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .testimonial-note-1 {
@@ -190,7 +243,7 @@ body {
 
 .testimonial-card:hover::before {
   left: 5px;
-} 
+}
 
 .testimonial-card:hover::after {
   right: 5px;
@@ -205,25 +258,19 @@ body {
     line-height: 0.625rem;
     font-size: 1.575rem;
   }
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   color: $ink-navy-blue;
 }
 .handwritten-2 {
   line-height: 1.1;
-  font-family: 'Architects Daughter', cursive;
-} 
+  font-family: "Architects Daughter", cursive;
+}
 .handwritten-3 {
   line-height: 1.1;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   color: #001b55;
 }
 
-.text-5xl {
-  font-size: 2.625rem;
-}
-.text-6xl {
-  font-size: 3.25rem;
-}
 
 .max-w-page {
   @media (min-width: 1920px) {
