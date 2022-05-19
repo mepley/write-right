@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: none;
 }
 
 body {
@@ -23,12 +24,27 @@ body {
   background-color: #007bb6;
 }
 
+.blur-image {
+  filter: blur(2px);
+}
+@media (min-width: 1024px) {
+  .blur-image {
+    height: blur(4px);
+  }
+}
+
 .h-torn-buffer {
   height: 100vh;
 }
 @media (max-width: 640px) {
   .h-torn-buffer {
     height: calc(100vh - 180px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-bg-gray-25 {
+    background-color: #fdfdfd;
   }
 }
 
@@ -78,7 +94,7 @@ body {
 }
 
 .slogan-height {
-  height: 450px;
+  height: 340px;
 }
 @media (min-width: 640px) {
   .slogan-height {
@@ -104,6 +120,31 @@ body {
   .landing-image {
     min-width: 775px;
     max-width: 775px;
+  }
+}
+
+#services,
+#pricing,
+#contact {
+  scroll-margin-top: 4rem;
+}
+
+#bio,
+#testimonials {
+  scroll-margin-top: 7rem;
+}
+
+.lg-scale-up-center {
+  transform: scale(1.05);
+}
+@media (max-width: 1024px) {
+  .lg-scale-up-center {
+    transform: scale(100%);
+  }
+}
+@media (min-width: 1024px) {
+  .lg-scale-up-center .lg-unscale-children {
+    transform: scale(0.95);
   }
 }
 
@@ -197,7 +238,7 @@ body {
   line-height: 0.5rem;
   font-size: 1.6rem;
   font-family: "Nanum Pen Script", cursive;
-  color: #016270;
+  color: #363636;
 }
 @media (min-width: 640px) {
   .handwritten {
@@ -209,12 +250,13 @@ body {
 .handwritten-2 {
   line-height: 1.1;
   font-family: "Architects Daughter", cursive;
+  color: #363636;
 }
 
 .handwritten-3 {
   line-height: 1.1;
   font-family: "Permanent Marker", cursive;
-  color: #001b55;
+  color: #363636;
 }
 
 @media (min-width: 1920px) {

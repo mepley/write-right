@@ -8,7 +8,7 @@ $text-xl: 1.5rem;
 $text-2xl: 3rem;
 $text-3xl: 3rem;
 $text-4xl: 3.5rem;
-$text-5xl: 8rem;
+$text-5xl: 4.5rem;
 $text-6xl: 5.25rem;
 
 @mixin textSizes {
@@ -38,12 +38,12 @@ $text-6xl: 5.25rem;
   }
 }
 
-:root{
-
+:root {
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: none;
 }
 
 body {
@@ -70,10 +70,23 @@ body {
   background-color: $secondary-color;
 }
 
+.blur-image {
+  filter: blur(2px);
+  @media (min-width: 1024px) {
+    height: blur(4px);
+  }
+}
+
 .h-torn-buffer {
   height: calc(100vh);
   @media (max-width: 640px) {
     height: calc(100vh - 180px);
+  }
+}
+
+.lg-bg-gray-25 {
+  @media (min-width: 1024px) {
+    background-color: #fdfdfd;
   }
 }
 
@@ -141,7 +154,7 @@ body {
 }
 
 .slogan-height {
-  height: 450px;
+  height: 340px;
   @media (min-width: 640px) {
     height: 450px;
   }
@@ -159,6 +172,31 @@ body {
   @media (min-width: 1920px) {
     min-width: 775px;
     max-width: 775px;
+  }
+}
+
+#services,
+#pricing,
+#contact {
+  scroll-margin-top: 4rem;
+}
+
+#bio,
+#testimonials {
+  scroll-margin-top: 7rem;
+}
+
+.lg-scale-up-center {
+  transform: scale(1.05);
+  // z-index: 2;
+  @media (max-width: 1024px) {
+    transform: scale(100%);
+    // z-index: 1;
+  }
+  @media (min-width: 1024px) {
+    .lg-unscale-children {
+      transform: scale(0.95);
+    }
   }
 }
 
@@ -263,18 +301,18 @@ body {
     font-size: 1.575rem;
   }
   font-family: "Nanum Pen Script", cursive;
-  color: $ink-navy-blue;
+  color: #363636;
 }
 .handwritten-2 {
   line-height: 1.1;
   font-family: "Architects Daughter", cursive;
+  color: #363636;
 }
 .handwritten-3 {
   line-height: 1.1;
   font-family: "Permanent Marker", cursive;
-  color: #001b55;
+  color: #363636;
 }
-
 
 .max-w-page {
   @media (min-width: 1920px) {
