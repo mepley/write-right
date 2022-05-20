@@ -115,8 +115,8 @@ body {
 }
 @media (min-width: 1024px) {
   .writing-image {
-    left: 50%;
-    transform: scale(102%) translate(-49%, -50%);
+    left: 48%;
+    transform: scale(105%) translate(-47.5%, -50%);
   }
 }
 
