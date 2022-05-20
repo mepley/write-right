@@ -47,12 +47,12 @@ html {
 }
 
 body {
-  background-image: linear-gradient(
-    to right,
-    $secondary-color 33.334%,
-    darken($secondary-color, 45%) 33.333%,
-    $secondary-color 33.333%
-  );
+  // background-image: linear-gradient(
+  //   to right,
+  //   $secondary-color 33.334%,
+  //   darken($secondary-color, 45%) 33.333%,
+  //   $secondary-color 33.333%
+  // );
   overflow-x: hidden;
 }
 
@@ -73,7 +73,7 @@ body {
 .blur-image {
   filter: blur(2px);
   @media (min-width: 1024px) {
-    height: blur(4px);
+    filter: blur(5px);
   }
 }
 
@@ -160,6 +160,18 @@ body {
   }
   @media (min-width: 1024px) {
     height: 625px;
+  }
+}
+
+.writing-image {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: scale(104%) translate(-47%, -50%);
+  @media (min-width: 1024px) {
+  left: 50%;
+    transform: scale(102%) translate(-49%, -50%);
   }
 }
 

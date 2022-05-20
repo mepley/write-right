@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right, #007bb6 33.334%, black 33.333%, #007bb6 33.333%);
   overflow-x: hidden;
 }
 
@@ -29,7 +28,7 @@ body {
 }
 @media (min-width: 1024px) {
   .blur-image {
-    height: blur(4px);
+    filter: blur(5px);
   }
 }
 
@@ -104,6 +103,20 @@ body {
 @media (min-width: 1024px) {
   .slogan-height {
     height: 625px;
+  }
+}
+
+.writing-image {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: scale(104%) translate(-47%, -50%);
+}
+@media (min-width: 1024px) {
+  .writing-image {
+    left: 50%;
+    transform: scale(102%) translate(-49%, -50%);
   }
 }
 
