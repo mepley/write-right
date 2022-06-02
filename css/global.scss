@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $primary-color: #74a434;
 $secondary-color: #007bb6;
 $ink-navy-blue: #016270;
@@ -159,12 +161,13 @@ body {
     height: 450px;
   }
   @media (min-width: 1024px) {
-    height: 625px;
+    height: 550px;
   }
 }
 
 .writing-image {
-  z-index: 1;
+  background-color: transparent;
+  z-index: -1;
   position: absolute;
   top: 50%;
   left: 47%;
@@ -330,4 +333,28 @@ body {
   @media (min-width: 1920px) {
     max-width: 1536px;
   }
+}
+
+#scroll-down-button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  height: 55px; /* Height of the alert */
+  width: 55px; /* Width of the alert */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: $primary-color; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  font-size: 22px; /* Increase font size */
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+#scroll-down-button:hover, #contact-button:hover {
+  background-color: color.scale($primary-color, $lightness: -10%)
 }
