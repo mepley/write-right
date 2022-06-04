@@ -43,7 +43,13 @@ body {
 
 @media (min-width: 1024px) {
   .lg-bg-gray-25 {
-    background-color: #fdfdfd;
+    background-color: #fcfcfc;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-bg-gray-33 {
+    background-color: #fafafa;
   }
 }
 
@@ -315,6 +321,12 @@ body {
 
 #scroll-down-button:hover, #contact-button:hover {
   background-color: #68942f;
+}
+
+li:before {
+  content: "";
+  padding-left: 0px;
+  color: red;
 }
 
 /*# sourceMappingURL=global.css.map */
