@@ -174,12 +174,12 @@ body {
   background-color: transparent;
   z-index: -1;
   position: absolute;
-  top: 50%;
-  left: 47%;
-  transform: scale(104%) translate(-47%, -50%);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+
   @media (min-width: 1024px) {
-    left: 48%;
-    transform: scale(105%) translate(-47.5%, -50%);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
   }
 }
 
@@ -339,6 +339,11 @@ body {
     max-width: 1536px;
   }
 }
+.min-w-page {
+  @media (min-width: 1536px) {
+    min-width: 1536px;
+  }
+}
 
 #scroll-down-button {
   display: none; /* Hidden by default */
@@ -360,8 +365,9 @@ body {
   opacity: 0;
 }
 
-#scroll-down-button:hover, #contact-button:hover {
-  background-color: color.scale($primary-color, $lightness: -10%)
+#scroll-down-button:hover,
+#contact-button:hover {
+  background-color: color.scale($primary-color, $lightness: -10%);
 }
 
 li:before {
