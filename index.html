@@ -38,7 +38,7 @@
   <body class="bg-white">
     <div class="flex w-full h-full">
       <!-- flex left -->
-      <div class="flex-1 min-h-screen from-white bg-gradient-to-r bg-gray-150 bg-green-500" style="z-index: 30;"></div>
+      <div class="flex-1 min-h-screen from-white bg-gradient-to-r bg-gray-150" style="z-index: 30;"></div>
 
 
       <div class="relative w-full max-w-page min-h-screen shadow-lg">
@@ -380,6 +380,11 @@
           </div>
         </section>
 
+          <!-- bottom of page -->
+          <button onclick="topFunction()" id="scroll-down-button" title="Go to top" class="shadow-md rounded-full bg-primary text-white">
+            <i class="fa fa-chevron-up" ></i>
+          </button>
+
           <!-- footer -->
           <footer class='absolute bottom-0 z-40 bg-secondary text-white w-full flex justify-center py-1 shadow-md font-semibold text-sm'>
             <div id='copyright-date-footer'>© 2022 Write Right</div>
@@ -387,16 +392,10 @@
         </div>
 
         <!-- flex right -->
-        <div class="flex-1 min-h-screen from-white bg-gradient-to-l bg-gray-150 bg-green-500" style="z-index: 30;"></div> 
+        <div class="flex-1 min-h-screen from-white bg-gradient-to-l bg-gray-150" style="z-index: 30;"></div> 
       </div>
     </div>
   </body>
-
-  
-  <!-- bottom of page -->
-  <button onclick="topFunction()" id="scroll-down-button" title="Go to top" class="shadow-md rounded-full bg-primary text-white">
-    <i class="fa fa-chevron-up" ></i>
-  </button>
 
   <script>
   // set page state
