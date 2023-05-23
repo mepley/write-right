@@ -1,3 +1,12 @@
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: none;
@@ -74,7 +83,8 @@ body {
   height: 30px;
   width: 100%;
   left: 0;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg)
+    bottom;
   background-size: 100%;
 }
 
@@ -87,7 +97,8 @@ body {
   height: 30px;
   width: 100%;
   left: 0;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg) bottom;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg)
+    bottom;
   background-size: 100%;
   transform: rotate(180deg);
 }
@@ -181,7 +192,10 @@ body {
   max-width: 360px;
   border-radius: 2px;
   background: #fff;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+  background-image: -webkit-linear-gradient(
+    rgba(0, 0, 0, 0.035),
+    rgba(255, 255, 255, 0.065) 100%
+  );
 }
 @media (min-width: 500px) {
   .testimonial-card {
@@ -193,14 +207,20 @@ body {
 @media (max-width: 640px) {
   .paper-color-2 {
     background: #fcfcfc;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+    background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.035),
+      rgba(255, 255, 255, 0.065) 100%
+    );
   }
 }
 
 @media (max-width: 640px) {
   .paper-color-3 {
     background: #fdfdfd;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.035), rgba(255, 255, 255, 0.065) 100%);
+    background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.035),
+      rgba(255, 255, 255, 0.065) 100%
+    );
   }
 }
 
