@@ -58,6 +58,9 @@ body {
   overflow-x: hidden;
 }
 
+.text-175rem {
+  font-size: 1.75rem;
+}
 .text-primary {
   color: $primary-color;
 }
@@ -379,7 +382,6 @@ p, q {
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
-
 
 #scroll-down-button:hover,
 #contact-button:hover {

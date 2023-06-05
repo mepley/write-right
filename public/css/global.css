@@ -7,6 +7,10 @@ body {
   overflow-x: hidden;
 }
 
+.text-175rem {
+  font-size: 1.75rem;
+}
+
 .text-primary {
   color: #74a434;
 }
